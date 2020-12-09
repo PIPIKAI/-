@@ -5,8 +5,8 @@ git add .
 :: 提交
 git commit -m "%commit_msg%"
 :: 推送到主分支
-git push origin gitee
+git push origin 
 :: 推送到gitee
-git push origin gitee
+git push gitee
 :: 停顿 
 pause

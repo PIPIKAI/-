@@ -1,0 +1,40 @@
+mongodb
+cd /home/zzk/cluster/mongodb
+ps -ef | grep mongo
+# 开启
+bin/mongod -config ./data/mongodb.conf
+
+#关闭
+bin/mongod -shutdown -config ./data/mongodb.conf
+
+https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.4.3.tgz
+Https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.4.3.tgz
+
+redis
+
+开启
+cd /home/zzk/cluster
+
+redis-server ./redis/redis.conf
+
+redis-cli
+
+redis-cli shutdown
+
+ftp 下载
+wget  ftp://192.168.0.102/gradle-4.6-all.zip  --ftp-user=Administrator --ftp-password=8848 
+
+elasticsearch 的启动
+su elasticsearch 
+cd /opt/elasticsearch
+
+bin/elasticsearch -d
+# 在主机上的网页输入ip:端口号可以访问elasticsearch服务
+# 端口号默认:9200
+# ip:以你的虚拟机的ip为准
+# 以我的主机为例:10.0.0.11:9200
+
+# 输入命令jps可以看到elasticsearch的进程
+停止ElasticSearch服务
+jps  # 查看进程的pid
+kill pid
